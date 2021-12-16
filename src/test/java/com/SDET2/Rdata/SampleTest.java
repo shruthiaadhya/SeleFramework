@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class Sample {
+public class SampleTest {
 	
 	@Test
 	public void cmdLineParameter()

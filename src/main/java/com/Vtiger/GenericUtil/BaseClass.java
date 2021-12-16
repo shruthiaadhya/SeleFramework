@@ -2,6 +2,7 @@ package com.Vtiger.GenericUtil;
 
 import java.io.File;
 
+
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -9,7 +10,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
@@ -34,13 +34,13 @@ public class BaseClass {
 		System.out.println("connect to database");
 	}
 	
-	//@Parameters("Browser")
+	@Parameters("Browser")
 	@BeforeClass (groups={"SmokeTest","RegressionTest"})
-	public void launchBrowser_URL() throws IOException
+	public void launchBrowser_URL(String browser) throws IOException
 	{
 		// Launch browser
                  FileUtil prop = FileUtil.objOfFileUtil();
-				String browser = prop.readDataFromPropFile("browser");
+				//String browser = prop.readDataFromPropFile("browser");
 				if(browser.equalsIgnoreCase("chrome"))
 				{
 					driver=new ChromeDriver();
