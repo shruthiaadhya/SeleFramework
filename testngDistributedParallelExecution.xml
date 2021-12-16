@@ -8,7 +8,7 @@
 		</classes>
 	</test> <!-- Test -->
 	<test name="TestRunner2">
-		<parameter name="Browser" value="firefox"></parameter>
+		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
 			<class
 				name="com.Vtiger.TC.TC002_CreateOrganizationWithDropdownTest" />

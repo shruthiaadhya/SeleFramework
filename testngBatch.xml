@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	
-	<parameter name="Browser" value="chrome"></parameter>
+
+
 	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.Vtiger.TC.TC001_CreateOrganizationTest" />
-			 <class
+			<class
 				name="com.Vtiger.TC.TC002_CreateOrganizationWithDropdownTest" />
-			<class name="com.Vtiger.TC.TC003_CreateContactWithOrganizationTest" /> 
+			<class
+				name="com.Vtiger.TC.TC003_CreateContactWithOrganizationTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

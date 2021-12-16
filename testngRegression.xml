@@ -8,6 +8,7 @@
 		</run>
 	</groups>
 	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
 			<class
 				name="com.Vtiger.TC.TC002_CreateOrganizationWithDropdownTest" />
