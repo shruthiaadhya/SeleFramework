@@ -2,23 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="SmokeTest"/>
-      </run>
-    </groups>
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.Vtiger.TC.TC001_CreateOrganizationTest">
+      <class name="com.Vtiger.TC.TC003_CreateContactWithOrganizationTest">
         <methods>
-          <include name="createOrganization"/>
           <include name="loginToApp"/>
           <include name="tearDown"/>
           <include name="logoutFromApp"/>
           <include name="launchBrowser_URL"/>
+          <include name="createContactWithOrg"/>
           <include name="disconnectFromDB"/>
           <include name="connectToDB"/>
         </methods>
-      </class> <!-- com.Vtiger.TC.TC001_CreateOrganizationTest -->
+      </class> <!-- com.Vtiger.TC.TC003_CreateContactWithOrganizationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

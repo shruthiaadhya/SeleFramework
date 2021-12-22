@@ -24,7 +24,7 @@ public class ContactOrgNameNewPage //Rule 1
 	@FindBy(name="search") //Rule2
 	private WebElement searchBtn;   //Rule3
 	
-	@FindBy(xpath="//a[text()=\"Test002\"]") //Rule2
+	@FindBy(xpath="//a[text()=\"Lenny5\"]") //Rule2
 	private WebElement selectTxt;   //Rule3
 
 	//Rule 4

@@ -39,7 +39,7 @@ public class BaseClass {
 	public void launchBrowser_URL(String browser) throws IOException
 	{
 		// Launch browser
-                 FileUtil prop = FileUtil.objOfFileUtil();
+                FileUtil prop = FileUtil.objOfFileUtil();
 				//String browser = prop.readDataFromPropFile("browser");
 				if(browser.equalsIgnoreCase("chrome"))
 				{

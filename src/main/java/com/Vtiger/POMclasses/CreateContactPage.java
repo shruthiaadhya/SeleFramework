@@ -75,7 +75,7 @@ public class CreateContactPage //Rule 1
 		String pw = driver.getWindowHandle();
 		plusImgOrgName.click();
 		ContactOrgNameNewPage connp=new ContactOrgNameNewPage(driver);
-		String Org = ExcelUtil.objOfExcelUtil().readExcelData("Sheet1", 13, 0);
+		String Org = ExcelUtil.objOfExcelUtil().readExcelData("Sheet1",20, 0);
 		String txt=ExcelUtil.objOfExcelUtil().readExcelData("Sheet3", 2, 0);
 		connp.selectOrgName(Org, txt);
 		driver.switchTo().window(pw);
